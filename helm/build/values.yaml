@@ -1,0 +1,15 @@
+app:
+  name: linkback-poi-gateway-app
+  namespace: linkback
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/linkback-gateway
+  org: rosa916-rvhvd
+  name: linkback-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: linkback/poi-gateway-app
+  tag: latest
